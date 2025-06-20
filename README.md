@@ -10,5 +10,5 @@ FSMs (Finite State Machines)
 Tools used : Modelsim
 
 To connect:
-LinkedIN: https://www.linkedin.com/in/saravanan-rsv-594006301
-GITHUB:
+LinkedIN: https://www.linkedin.com/in/saravanan-rsv-594006301 -
+GITHUB:https://github.com/sar08-ece 
