@@ -1,3 +1,5 @@
+DEMUX CODE AND CONVERTING BINARY TO OTHER FORMATS:
+
 I have implemented basic DEMUX operation.
 
 LOGIC USED:
