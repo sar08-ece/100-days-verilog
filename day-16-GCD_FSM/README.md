@@ -1,32 +1,26 @@
-//8 bit ALU 
-//16 operations
-
-We use 4 bit select lines to do the 16 operations
-
-Add-->Add the two 8 bit numbers.
-
-Sub-->Gives the difference between the two numbers.
-
-Inc-->Add 1 to the given binary number.
-
-Dec-->Dec 1 to the given binary number.
-
-AND-->Gives the logical AND.
-
-OR->Gives the logical OR.
-
-EXOR-->Gives the logical EXOR.
-
-NOT-->Gives the logical NOT.
+GCD CALCULATOR USING EUCLID ALGORITHM
 
 
-Shift left-->A<<1.
-Shift right-->A>>1.
-Rotate left -->
-Suppose we have a 8 bit number.Shifting left makes the MSB to move to the LSB.
+The GCD of two numbers is the largest number that divides both without leaving a remainder.
 
-Rotate right-->
-Suppose we have a 8 bit number.Shifting left makes the LSB to move to the MSB.
+This project implements a Finite State Machine (FSM)-based GCD calculator in Verilog using the subtraction-based Euclidean algorithm. The design uses a 3-state FSM (IDLE, COMPUTE, DONE) to compute the Greatest Common Divisor of two input numbers without using division or modulo operators.
 
-Zero flag->If the result is zero.
-Negative->IF the MSB of the result is 1.
+FSM states:
+
+IDLE – waits for start signal, loads inputs
+
+COMPUTE – repeatedly subtracts the smaller from the larger
+
+DONE – outputs GCD and  done signal
+
+Pure RTL (no behavioral % operator).
+
+On start, inputs are latched into internal registers A and B.
+
+FSM enters COMPUTE state, repeatedly subtracting the smaller value from the larger.
+
+When either A == 0 or B == 0, FSM transitions to DONE.
+
+GCD is the non-zero value of the two, assigned to gcd.
+
+Output done is raised to indicate result is valid.
