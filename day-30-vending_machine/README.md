@@ -19,13 +19,13 @@ Product B → ₹15
 
 Selection:
 
-sel = 0 → Product A
+sel = 0 → Product A.
 
-sel = 1 → Product B
+sel = 1 → Product B.
 
 Change Return Logic:
 
-If ₹15 inserted and Product A is selected, dispense A and return ₹5
+If ₹15 inserted and Product A is selected, dispense A and return ₹5.
 
 Rejects overpayment (> ₹15)
 
